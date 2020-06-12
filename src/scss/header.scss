@@ -1,0 +1,48 @@
+.header {
+    //@extend %box-predef;
+    //border-color: red;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFF0F2;
+
+    $borderwidth: 6px;
+
+    .logo {
+        margin-top: 63px;
+        margin-left: 149px;
+        border: 6px solid black;
+        width: 114px;
+        height: 49px;
+        max-height: 49px;
+        &__container {
+            padding: 17px-$borderwidth 14px-$borderwidth 14px-$borderwidth 15px-$borderwidth;
+            max-height: 37px;
+            &-text {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: black;
+                font-weight: 600;
+                text-align: center;
+                span {
+                    font-size: 18px;
+                    font-weight: 800;
+                    color: #77EFE5; // #49c0b6;
+
+                }
+            }
+        }
+    }
+    .logo:hover {
+        span{
+            font-size: 19px;
+            color: #49c0b6;
+        }
+    }
+
+
+    .burger {
+        margin-top: 79px;
+        margin-right: 152px;
+    }
+
+}

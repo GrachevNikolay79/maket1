@@ -1,0 +1,32 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name; 
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"); 
+        font-weight: #{$weight}; 
+        font-style: #{$style}; 
+        }
+}
+
+@import "fonts";
+@import "zero";
+//@import "test";
+
+
+
+%box-predef{
+    border: 1px dotted red;
+}
+
+@import "header";
+@import "hello";
+@import "about";
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: $site-width;
+    font-family: $fMontserratBold;
+    //background-color: #fafafaff;
+}

@@ -1,0 +1,122 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    border:1px dotted rebeccapurple;
+    padding-top: 130px;
+    background-color:#F8FAFA;
+
+    &__title {
+        display: flex;
+        flex-direction: column;    
+        margin: auto;
+        //border:1px dotted red;
+        text-transform: uppercase;
+        &-title{
+            margin: auto;
+            color:black;
+            opacity: 0.9;
+            font-size: 38px;
+            
+        }
+        &-subtitle{
+            margin: auto;
+            margin-top: 17px;
+            font-family:$fMerriweatherRegular;
+            font-size: 18px;
+            opacity: 0.619;
+        }
+    }
+
+    &__block{
+        margin-top: 139px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+        .slider-block{//блок определяющий размер и положение
+            max-width: 480px;
+            width: 480px;
+            .slider{// сам слайдер
+                display: flex;
+                flex-direction: column;
+                &__nav{//показывалка с навигацией
+                    border: 1px dotted red;
+                    display: flex;
+                    align-content: stretch;
+                    flex-wrap: nowrap;
+                    &-prev{
+                        max-width: 43px;
+                        color:gray;
+                        border: 1px dotted blue;
+                    }
+
+                    &-next{
+                        max-width: 43px;
+                        color:gray;
+                        border: 1px dotted blue;
+                    }
+
+                    &__image{
+                        border: 1px dotted green;
+                        background-color: gray;
+                        float:left;
+                        position:relative;
+                        //width:200px;
+                        //height:120px;
+                        //margin:.5em 10px .5em 0;
+                        img{                            
+                            // margin:0;
+                            // position:absolute;
+                            // top:0px;
+                            // left:0px;
+                            clip:rect(0px 0px 390px 480px);
+                        }
+                    }
+                    &__progress{
+                        background-color: lightgreen;
+                    }
+                }
+            }
+        }
+        
+
+        .cards-block {
+            //border:1px dotted red;
+            display: flex;
+            flex-direction: column;
+            max-width: 474px;
+            // :nth-child(n+2){
+            //      margin-top: 38px;
+            //  }
+            .card{
+                padding: 2px 2px 2px 2px;
+                //border:1px dotted red; 
+                margin-top: 38px;
+                &__title{                    
+                    opacity:0.7490196078431373;
+                    color:#000000;
+                    font-family:$fMerriweatherRegular;
+                    font-weight: 800;
+                    font-size:20px;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+                &__content{
+                    text-align: justify;
+                    margin-top: 31px;
+                    opacity:0.7411764705882353;
+                    color:#000000;
+                    font-family: $RalewayRegular;
+                    font-size: 16px;
+                    //align:left;
+                }
+            }
+            :first-child { margin-top: 0px; }
+            
+        }
+
+    }
+}
+//Merriweather-Regular
+// font-family:$fMerriweatherRegular;

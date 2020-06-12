@@ -1,0 +1,9 @@
+//@include font("DroidSansFallback", "DroidSansFallback", "400", "normal");
+//@include font("Ubuntu-B", "Ubuntu-B", "400", "normal");
+@include font("Montserrat-Bold","Montserrat-Bold","400", "normal");
+@include font("Merriweather-Regular","Merriweather-Regular","400","normal");
+//@include font("Raleway-Regular","Raleway-Regular","400","normal");
+
+$fMerriweatherRegular: Merriweather-Regular,AdobeInvisFont,MyriadPro-Regular;
+$fMontserratBold: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
+$RalewayRegular: Raleway-Regular,AdobeInvisFont,MyriadPro-Regular;

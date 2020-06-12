@@ -1,0 +1,6 @@
+.ideagit add README.md
+node_modules
+package-lock.json
+shop_no
+.vscode
+.directory
