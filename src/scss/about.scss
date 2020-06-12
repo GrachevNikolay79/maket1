@@ -31,55 +31,72 @@
         margin-top: 139px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        padding-bottom: 110px;
 
+        .slider{//блок определяющий размер и положение
+            $sliderwhidth: 395px;
+            $sliderheight: 486px;
+            $slidernavwidth: 43px;
+            max-width: $sliderwhidth + $slidernavwidth * 2;
+            width: $sliderwhidth + $slidernavwidth * 2;
+            height: $sliderheight;
+            min-height: $sliderheight;
+            display: flex;
+            flex-direction: column;
 
-        .slider-block{//блок определяющий размер и положение
-            max-width: 480px;
-            width: 480px;
-            .slider{// сам слайдер
+            .slider__nav{//показывалка с навигацией
+                //border: 1px dotted red;
                 display: flex;
-                flex-direction: column;
-                &__nav{//показывалка с навигацией
-                    border: 1px dotted red;
-                    display: flex;
-                    align-content: stretch;
-                    flex-wrap: nowrap;
-                    &-prev{
-                        max-width: 43px;
-                        color:gray;
-                        border: 1px dotted blue;
-                    }
+                flex-direction: row;
+                align-content: stretch;
+                flex-wrap: nowrap;
+                align-items: center;
 
-                    &-next{
-                        max-width: 43px;
-                        color:gray;
-                        border: 1px dotted blue;
-                    }
+                .prev{
+                    max-width: $slidernavwidth;
+                    width: $slidernavwidth;
 
-                    &__image{
-                        border: 1px dotted green;
-                        background-color: gray;
-                        float:left;
-                        position:relative;
-                        //width:200px;
-                        //height:120px;
-                        //margin:.5em 10px .5em 0;
-                        img{                            
-                            // margin:0;
-                            // position:absolute;
-                            // top:0px;
-                            // left:0px;
-                            clip:rect(0px 0px 390px 480px);
-                        }
-                    }
-                    &__progress{
-                        background-color: lightgreen;
+                    background-color:#EFF0F2;
+                    width: $slidernavwidth;
+                    max-height: 413px;
+                    min-height: 413px;
+                }
+                .next{
+                    max-width: $slidernavwidth;
+                    width: $slidernavwidth;
+                    background-color:#EFF0F2;
+                    text-align: center;
+                    max-height: 413px;
+                    min-height: 413px;
+                }
+    
+                .image{                   
+                    //background-color: gray;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;   
+                    height: 484px;
+                
+                    .mimg {
+                        position: absolute;
+                        top: -15px;
+                        left: -395px;
                     }
                 }
+
             }
+            
+            .slider__progress{
+                background-color: lightgreen;
+            }
+            
+            
         }
         
+
+
 
         .cards-block {
             //border:1px dotted red;
@@ -118,5 +135,7 @@
 
     }
 }
+
+
 //Merriweather-Regular
 // font-family:$fMerriweatherRegular;
