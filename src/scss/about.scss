@@ -1,31 +1,9 @@
 .about{
     display: flex;
     flex-direction: column;
-    border:1px dotted rebeccapurple;
+    //border:1px dotted rebeccapurple;
     padding-top: 130px;
     background-color:#F8FAFA;
-
-    &__title {
-        display: flex;
-        flex-direction: column;    
-        margin: auto;
-        //border:1px dotted red;
-        text-transform: uppercase;
-        &-title{
-            margin: auto;
-            color:black;
-            opacity: 0.9;
-            font-size: 38px;
-            
-        }
-        &-subtitle{
-            margin: auto;
-            margin-top: 17px;
-            font-family:$fMerriweatherRegular;
-            font-size: 18px;
-            opacity: 0.619;
-        }
-    }
 
     &__block{
         margin-top: 139px;
@@ -72,31 +50,54 @@
                 }
     
                 .image{                   
-                    //background-color: gray;
-                    float: left;
-                    overflow: hidden;
-                    position: relative;
                     width: 100%;   
                     height: 484px;
-                
-                    .mimg {
-                        position: absolute;
-                        top: -15px;
-                        left: -395px;
-                    }
+                    overflow: hidden;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    // .mimg {
+                    //     align-self:center;
+                    //     margin-top: 10px;
+                    // }
                 }
 
+                // .image{                   
+                //     //background-color: gray;
+                //     float: left;
+                //     overflow: hidden;                    
+                //     width: 100%;   
+                //     height:$sliderheight;
+                
+                //     .mimg {
+                //         margin: -10px -390px -0px -390px;
+                //         //margin: -10px -66% -0px -33%;
+                //     }
+                // }
             }
             
             .slider__progress{
-                background-color: lightgreen;
+                //background-color: lightgreen;
+                ul{
+                    display:flex;
+                    margin-top:36px;
+                    justify-content: center;
+                    li{
+                        margin: 1px 1px 1px 1px;
+                        width: 12px;
+                        height: 12px;
+                        border-radius:50%;
+                        background-color: #D0D0D0;                       
+                    }
+
+                }
+                .active{
+                    background-color:#71F6EB;
+                }
             }
             
             
         }
-        
-
-
 
         .cards-block {
             //border:1px dotted red;
@@ -124,7 +125,7 @@
                     margin-top: 31px;
                     opacity:0.7411764705882353;
                     color:#000000;
-                    font-family: $RalewayRegular;
+                    font-family: $fRalewayRegular;
                     font-size: 16px;
                     //align:left;
                 }
@@ -133,6 +134,28 @@
             
         }
 
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;    
+    margin: auto;
+    //border:1px dotted red;
+    text-transform: uppercase;
+    &-title{
+        margin: auto;
+        color:black;
+        opacity: 0.9;
+        font-size: 38px;
+        
+    }
+    &-subtitle{
+        margin: auto;
+        margin-top: 17px;
+        font-family:$fMerriweatherRegular;
+        font-size: 18px;
+        opacity: 0.619;
     }
 }
 

@@ -1,0 +1,37 @@
+.works{
+    display: flex;
+    flex-direction: column;
+    //border:1px dotted rebeccapurple;
+    padding-top: 130px;
+    background-color:#FFFFFF;
+    padding-bottom: 123px;
+}
+
+
+.mtable{
+    margin: 0 auto;
+    margin-top: 121px;
+    //border:1px dotted red;
+    width: 1142px;
+    height: 734px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item{
+        width: 373px;
+        max-width: 373px;
+        height: 362px;
+        background-color: lightgray;
+        overflow: hidden;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            transition: 0.3s ease;
+        }
+    }
+    &__item:hover img {
+        transform: scale(1.1,1.1);
+        
+      }
+}

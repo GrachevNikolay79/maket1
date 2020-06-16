@@ -2,8 +2,12 @@
 //@include font("Ubuntu-B", "Ubuntu-B", "400", "normal");
 @include font("Montserrat-Bold","Montserrat-Bold","400", "normal");
 @include font("Merriweather-Regular","Merriweather-Regular","400","normal");
-//@include font("Raleway-Regular","Raleway-Regular","400","normal");
+@include font("Merriweather-Bold","Merriweather-Bold","400","normal");
+@include font("Raleway-Regular","Raleway-Regular","400","normal");
+@include font("Raleway-Medium","Raleway-Medium","400","normal");
 
 $fMerriweatherRegular: Merriweather-Regular,AdobeInvisFont,MyriadPro-Regular;
+$fMerriweatherBold: Merriweather-Bold,AdobeInvisFont,MyriadPro-Regular;
 $fMontserratBold: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
-$RalewayRegular: Raleway-Regular,AdobeInvisFont,MyriadPro-Regular;
+$fRalewayRegular: Raleway-Regular,AdobeInvisFont,MyriadPro-Regular;
+$fRalewayMedium: Raleway-Medium,AdobeInvisFont,MyriadPro-Regular;
