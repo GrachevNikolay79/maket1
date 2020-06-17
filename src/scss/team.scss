@@ -1,0 +1,26 @@
+.team-page{
+    border: 1px dotted brown;
+    display: flex;
+    flex-direction: column;
+    //align-content: center;
+    align-items: center;
+    
+    .team{
+        border: 1px dotted green;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        height: 100%;
+        margin: 122px 0 117px 0;
+        width: 1144px;
+        max-width: 1144px;
+        justify-content: space-between;
+        height: 944px;
+        min-height: 944px;
+        &__photo{
+            width: 371px;
+            height: 441px;
+            border: 1px dashed red;
+        }
+    }
+}
